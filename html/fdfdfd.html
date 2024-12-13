@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/null.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header_main">
+                <div class="header_logo">
+                    <a href="#" class="header_txt">ToDo List</a>
+                </div>
+                <div class="header_newtask">
+                    <div class="header_input">
+                        <input type="text">
+                    </div>
+                    <div class="header_button">
+                        <button class="header_battoon">
+                            Add a new task
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main__quest">
+            <div class="main__unfinishedTask ">
+                <span class="unfinishedTask__to_do">
+                    To Do
+                </span>
+                <span class="unfinishedTask__do_list">
+                    {{ needDoList.length }}
+                </span>
+            </div>
+            <div class="main_task">
+                <input class="main_checkbox_task" type="checkbox">
+                <span class="checkbox_task_text">{{ mask.title }}</span>
+                <button class="main_button_task">remowe</button>
+            </div>
+            
+            <div class="main__finishedTask ">
+                <span class="finishedTask__to_do">
+                    Done
+                </span>
+                <span class="finishedTask__do_list">
+                    {{ completeList.length }}
+                </span>
+            </div>
+            <div class="main_completed_task">
+                <input class="completed_checkbox_task" type="checkbox">
+                <span class="completed_task_text">{{ mask.title }}</span>
+                <button class="completed_button_task">remowe</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
